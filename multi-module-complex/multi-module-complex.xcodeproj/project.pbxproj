@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD92C2422A1BA22600357A18 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92C2412A1BA22600357A18 /* SwiftUIView.swift */; };
 		FDAF3AE72A0A9F63002A43EC /* multi_module_complexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF3AE62A0A9F63002A43EC /* multi_module_complexApp.swift */; };
-		FDAF3AE92A0A9F63002A43EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF3AE82A0A9F63002A43EC /* ContentView.swift */; };
 		FDAF3AEB2A0A9F64002A43EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAF3AEA2A0A9F64002A43EC /* Assets.xcassets */; };
 		FDAF3AEF2A0A9F64002A43EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAF3AEE2A0A9F64002A43EC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -31,9 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD92C2412A1BA22600357A18 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		FDAF3AE32A0A9F63002A43EC /* multi-module-complex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multi-module-complex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAF3AE62A0A9F63002A43EC /* multi_module_complexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multi_module_complexApp.swift; sourceTree = "<group>"; };
-		FDAF3AE82A0A9F63002A43EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDAF3AEA2A0A9F64002A43EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAF3AEC2A0A9F64002A43EC /* multi_module_complex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = multi_module_complex.entitlements; sourceTree = "<group>"; };
 		FDAF3AEE2A0A9F64002A43EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				FDAF3AE62A0A9F63002A43EC /* multi_module_complexApp.swift */,
-				FDAF3AE82A0A9F63002A43EC /* ContentView.swift */,
+				FD92C2412A1BA22600357A18 /* SwiftUIView.swift */,
 				FDAF3AEA2A0A9F64002A43EC /* Assets.xcassets */,
 				FDAF3AEC2A0A9F64002A43EC /* multi_module_complex.entitlements */,
 				FDAF3AED2A0A9F64002A43EC /* Preview Content */,
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAF3AE92A0A9F63002A43EC /* ContentView.swift in Sources */,
+				FD92C2422A1BA22600357A18 /* SwiftUIView.swift in Sources */,
 				FDAF3AE72A0A9F63002A43EC /* multi_module_complexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +305,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

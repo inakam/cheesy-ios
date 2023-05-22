@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Home
 
 @main
 struct multi_module_complexApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SwiftUIView()
         }
     }
 }

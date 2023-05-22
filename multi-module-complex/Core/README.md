@@ -6,4 +6,11 @@ A description of this package.
 
 - 設定したSchemaをビルドしてからimportしないと失敗する
 
+- 'HomeView' initializer is inaccessible due to 'internal' protection level
+  - initを書かないといけないんだって〜へ〜
 
+- Undefined symbol: _$s4Home0A4ViewV7SwiftUI0B0AAMc
+  - https://kan-kikuchi.hatenablog.com/entry/UndefinedSymbolsForArchitecture
+    - 治らない
+
+- 

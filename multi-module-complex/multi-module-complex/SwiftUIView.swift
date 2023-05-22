@@ -1,27 +1,18 @@
 //
-//  ContentView.swift
+//  SwiftUIView.swift
 //  multi-module-complex
 //
-//  Created by 中村伊吹 on 2023/05/10.
+//  Created by 中村伊吹 on 2023/05/22.
 //
 
 import SwiftUI
 import Charts
+import ComplexModule
 
-struct ContentView: View {
-    struct ValuePerCategory {
-        var category: String
-        var value: Double
-    }
-
-    let data: [ValuePerCategory] = [
-        .init(category: "A", value: 5),
-        .init(category: "B", value: 9),
-        .init(category: "C", value: 7)
-    ]
-    
+struct SwiftUIView: View {
     @State private var real: String = ""
     @State private var imaginary: String = ""
+    
     var body: some View {
         VStack {
             HStack {
@@ -37,20 +28,14 @@ struct ContentView: View {
             HStack {
                 Text("(0 < x < 11)")
             }.padding()
-            Chart(data, id: \.category) { item in
-                BarMark(
-                    x: .value("Category", item.category),
-                    y: .value("Value", item.value)
-                )
-            }
         }
         .padding()
     }
     private func generateGraph() {}
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SwiftUIView()
     }
 }
