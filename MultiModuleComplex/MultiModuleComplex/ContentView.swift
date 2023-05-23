@@ -7,21 +7,25 @@
 
 import SwiftUI
 import Charts
+import ComplexModule
+
+// Thx for Ryomm
+struct ComplexNum: Identifiable {
+    var id: UUID = .init()
+    var complexNum: Complex<Double>
+
+    init(complexNum: Complex<Double>) {
+        self.complexNum = complexNum
+    }
+}
+class ComplexNums: ObservableObject {
+    @Published var complexNums = [ComplexNum]()
+}
 
 struct ContentView: View {
-    struct ValuePerCategory {
-        var category: String
-        var value: Double
-    }
-
-    let data: [ValuePerCategory] = [
-        .init(category: "A", value: 5),
-        .init(category: "B", value: 9),
-        .init(category: "C", value: 7)
-    ]
-    
     @State private var real: String = ""
     @State private var imaginary: String = ""
+    @StateObject var complexNums = ComplexNums()
     var body: some View {
         VStack {
             HStack {
@@ -37,12 +41,7 @@ struct ContentView: View {
             HStack {
                 Text("(0 < x < 11)")
             }.padding()
-            Chart(data, id: \.category) { item in
-                BarMark(
-                    x: .value("Category", item.category),
-                    y: .value("Value", item.value)
-                )
-            }
+            // ここにグラフを表示したかった
         }
         .padding()
     }
