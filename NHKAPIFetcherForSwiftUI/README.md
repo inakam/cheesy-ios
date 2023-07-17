@@ -4,9 +4,6 @@
 - https://qiita.com/MilanistaDev/items/fce3987b02a284f5112a
 
 # スクショ
-<p float="left">
-
-</p>
 <div style="display: flex; justify-content: space-around;">
   <img src="https://github.com/inakam/cheesy-ios/assets/23179726/0de86362-6955-4430-a508-0593fa2a76b0" style="width: 24%;" />
   <img src="https://github.com/inakam/cheesy-ios/assets/23179726/5896b512-bee8-4338-a65b-ded5bc26dadc" style="width: 24%;" />
