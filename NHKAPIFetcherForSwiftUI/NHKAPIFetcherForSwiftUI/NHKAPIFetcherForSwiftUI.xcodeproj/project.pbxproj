@@ -17,6 +17,7 @@
 		FDE9F0392A6593880013963A /* DetailViewParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9F0382A6593880013963A /* DetailViewParts.swift */; };
 		FDE9F03B2A6598460013963A /* fetchProgramInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9F03A2A6598460013963A /* fetchProgramInfoAPI.swift */; };
 		FDE9F03D2A659CA60013963A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9F03C2A659CA60013963A /* Environment.swift */; };
+		FDE9F03F2A65A8450013963A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9F03E2A65A8450013963A /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FDE9F0382A6593880013963A /* DetailViewParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewParts.swift; sourceTree = "<group>"; };
 		FDE9F03A2A6598460013963A /* fetchProgramInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchProgramInfoAPI.swift; sourceTree = "<group>"; };
 		FDE9F03C2A659CA60013963A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FDE9F03E2A65A8450013963A /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				FDE9F0352A65917F0013963A /* DetailView.swift */,
 				FDE9F0382A6593880013963A /* DetailViewParts.swift */,
+				FDE9F03E2A65A8450013963A /* ToastView.swift */,
 				FDE9F03A2A6598460013963A /* fetchProgramInfoAPI.swift */,
 			);
 			path = DetailView;
@@ -170,6 +173,7 @@
 				FDE9F0242A65860F0013963A /* NHKAPIFetcherForSwiftUIApp.swift in Sources */,
 				FDE9F0362A65917F0013963A /* DetailView.swift in Sources */,
 				FDE9F0342A658D360013963A /* RowView.swift in Sources */,
+				FDE9F03F2A65A8450013963A /* ToastView.swift in Sources */,
 				FDE9F03B2A6598460013963A /* fetchProgramInfoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

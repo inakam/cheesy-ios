@@ -21,8 +21,20 @@ actor UserDefaultStorage {
 
 struct DetailViewParts: View {
     @State private var memo: String = ""
+    @State private var showSavedMessage: Bool = false
     let ProgramDetailData: ProgramDetail
     let storage = UserDefaultStorage()
+    
+    @MainActor
+    func saveMemo() async {
+        await storage.saveMemo(for: ProgramDetailData.list.g1[0].id, memo: memo)
+        showSavedMessage = true
+        
+        // 2秒経ったらメッセージを隠す
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            showSavedMessage = false
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -63,15 +75,19 @@ struct DetailViewParts: View {
                 .border(Color.gray, width: 0.5)
             Button(action: {
                 Task {
-                    await storage.saveMemo(for: ProgramDetailData.list.g1[0].id, memo: memo)
+                    await saveMemo()
                 }
             }) {
-                Text("Save Memo")
-                    .font(.body)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                if showSavedMessage {
+                    ToastView()
+                } else {
+                    Text("Save Memo")
+                        .font(.body)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
             }
         }
         .padding()
