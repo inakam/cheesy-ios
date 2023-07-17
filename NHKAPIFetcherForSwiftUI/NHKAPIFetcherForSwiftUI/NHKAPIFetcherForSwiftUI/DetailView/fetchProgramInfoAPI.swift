@@ -8,7 +8,7 @@
 import Foundation
 
 func fetchProgramDetailData(for id: String) async throws -> ProgramDetail {
-    let url = URL(string: "https://api.nhk.or.jp/v2/pg/info/130/s3/\(id).json?key=\(NHKAPIKEY)")!
+    let url = URL(string: "https://api.nhk.or.jp/v2/pg/info/130/g1/\(id).json?key=\(NHKAPIKEY)")!
 
     let (data, _) = try await URLSession.shared.data(from: url)
     let decoder = JSONDecoder()

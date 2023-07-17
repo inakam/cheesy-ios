@@ -40,10 +40,10 @@ struct ProgramDetail: Decodable {
     var list: ProgramList
     
     struct ProgramList: Decodable {
-        var s3: [S3]
+        var g1: [G1]
     }
     
-    struct S3: Decodable {
+    struct G1: Decodable {
         var id: String
         var start_time: String
         var end_time: String
@@ -58,8 +58,8 @@ struct ProgramDetail: Decodable {
 
 let mockProgramDetailData: ProgramDetail = ProgramDetail(
     list: ProgramDetail.ProgramList(
-    s3: [
-    ProgramDetail.S3(
+    g1: [
+    ProgramDetail.G1(
         id: "2023071724225",
         start_time: "2023-07-17T05:00:00+09:00",
         end_time: "2023-07-17T05:55:00+09:00",

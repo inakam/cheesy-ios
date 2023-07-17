@@ -38,6 +38,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(programId: mockProgramDetailData.list.s3[0].id)
+        DetailView(programId: mockProgramDetailData.list.g1[0].id)
     }
 }
