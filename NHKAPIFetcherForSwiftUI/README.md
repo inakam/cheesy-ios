@@ -5,8 +5,11 @@
 
 # スクショ
 <p float="left">
-  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/0de86362-6955-4430-a508-0593fa2a76b0" width="100" />
-  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/5896b512-bee8-4338-a65b-ded5bc26dadc" width="100" />
-  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/795d26ac-591f-4201-8ec7-85c6fdee0c8e" width="100" />
-  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/c6aa2884-708a-4708-ba5a-c25ff25a3a49" width="100" />
+
 </p>
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/0de86362-6955-4430-a508-0593fa2a76b0" style="width: 24%;" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/5896b512-bee8-4338-a65b-ded5bc26dadc" style="width: 24%;" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/795d26ac-591f-4201-8ec7-85c6fdee0c8e" style="width: 24%;" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/c6aa2884-708a-4708-ba5a-c25ff25a3a49" style="width: 24%;" />
+</div>
