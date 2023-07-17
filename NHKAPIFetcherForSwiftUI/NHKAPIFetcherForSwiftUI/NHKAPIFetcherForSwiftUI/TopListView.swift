@@ -20,7 +20,7 @@ struct TopListView: View {
                         RowView(programData: item)
                     }
                 }
-                .navigationBarTitle(Text("現在放送中の番組一覧"))
+                .navigationBarTitle(Text("NHK番組一覧"))
             } else if isLoading {
                 Text ("Loading...")
             } else {
