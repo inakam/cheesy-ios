@@ -52,7 +52,7 @@ struct ProgramDetail: Decodable {
     }
 }
 
-let mockProgramDetail: ProgramDetail = ProgramDetail(s3: [
+let mockProgramDetailData: ProgramDetail = ProgramDetail(s3: [
     ProgramDetail.S3(
         id: "2023071724225",
         start_time: "2023-07-17T05:00:00+09:00",
