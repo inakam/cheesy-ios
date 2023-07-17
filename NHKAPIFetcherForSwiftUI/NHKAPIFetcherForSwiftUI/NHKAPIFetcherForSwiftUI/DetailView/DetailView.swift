@@ -12,9 +12,7 @@ struct DetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
-                Text("hoge")
-            }
+            DetailViewParts(ProgramDetailData: ProgramDetailData)
         }
         .navigationTitle("番組詳細")
         .navigationBarTitleDisplayMode(.inline)
