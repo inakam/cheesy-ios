@@ -13,7 +13,10 @@ struct TopListView: View {
     var body: some View {
         NavigationView {
             List([NowOnAirData.nowonair_list.g1.previous, NowOnAirData.nowonair_list.g1.present, NowOnAirData.nowonair_list.g1.following], id: \.id) { item in
-                RowView(programData: item)
+                NavigationLink(destination: DetailView(programId: item.id))
+                {
+                    RowView(programData: item)
+                }
             }.navigationBarTitle(Text("現在放送中の番組一覧"))
         }
     }

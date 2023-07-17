@@ -37,7 +37,11 @@ let mockNowOnAirData: NowOnAir = NowOnAir(
     ))
 
 struct ProgramDetail: Decodable {
-    var s3: [S3]
+    var list: ProgramList
+    
+    struct ProgramList: Decodable {
+        var s3: [S3]
+    }
     
     struct S3: Decodable {
         var id: String
@@ -52,7 +56,9 @@ struct ProgramDetail: Decodable {
     }
 }
 
-let mockProgramDetailData: ProgramDetail = ProgramDetail(s3: [
+let mockProgramDetailData: ProgramDetail = ProgramDetail(
+    list: ProgramDetail.ProgramList(
+    s3: [
     ProgramDetail.S3(
         id: "2023071724225",
         start_time: "2023-07-17T05:00:00+09:00",
@@ -64,4 +70,5 @@ let mockProgramDetailData: ProgramDetail = ProgramDetail(s3: [
         program_url: "//nhk.jp/P242",
         hashtags: ["#クラシック倶楽部"]
     )
-])
+    ])
+)

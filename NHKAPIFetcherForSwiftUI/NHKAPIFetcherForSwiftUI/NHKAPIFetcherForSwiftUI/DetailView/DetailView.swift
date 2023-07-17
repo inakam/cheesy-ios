@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct DetailView: View {
-    let ProgramDetailData: ProgramDetail
+    let programId: String
+    @State private var programDetailData: ProgramDetail?
+    @State private var isLoading = true
     
     var body: some View {
         ScrollView {
-            DetailViewParts(ProgramDetailData: ProgramDetailData)
+            if let programDetailData = programDetailData {
+                DetailViewParts(ProgramDetailData: programDetailData)
+            } else if isLoading {
+                Text("Loading...")
+            } else {
+                Text("Failed to load data.")
+            }
         }
         .navigationTitle("番組詳細")
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            do {
+                isLoading = true
+                programDetailData = try await fetchProgramDetailData(for: programId)
+            } catch {
+                print("Failed to fetch data: \(error)")
+            }
+            isLoading = false
+        }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(ProgramDetailData: mockProgramDetailData)
+        DetailView(programId: mockProgramDetailData.list.s3[0].id)
     }
 }
