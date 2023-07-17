@@ -4,7 +4,9 @@
 - https://qiita.com/MilanistaDev/items/fce3987b02a284f5112a
 
 # スクショ
-![Simulator Screenshot - iPhone 14 Pro - 2023-07-18 at 01 58 21](https://github.com/inakam/cheesy-ios/assets/23179726/0de86362-6955-4430-a508-0593fa2a76b0)
-![Simulator Screenshot - iPhone 14 Pro - 2023-07-18 at 01 58 27](https://github.com/inakam/cheesy-ios/assets/23179726/5896b512-bee8-4338-a65b-ded5bc26dadc)
-![Simulator Screenshot - iPhone 14 Pro - 2023-07-18 at 01 59 55](https://github.com/inakam/cheesy-ios/assets/23179726/795d26ac-591f-4201-8ec7-85c6fdee0c8e)
-![Simulator Screenshot - iPhone 14 Pro - 2023-07-18 at 02 00 17](https://github.com/inakam/cheesy-ios/assets/23179726/c6aa2884-708a-4708-ba5a-c25ff25a3a49)
+<p float="left">
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/0de86362-6955-4430-a508-0593fa2a76b0" width="100" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/5896b512-bee8-4338-a65b-ded5bc26dadc" width="100" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/795d26ac-591f-4201-8ec7-85c6fdee0c8e" width="100" />
+  <img src="https://github.com/inakam/cheesy-ios/assets/23179726/c6aa2884-708a-4708-ba5a-c25ff25a3a49" width="100" />
+</p>
